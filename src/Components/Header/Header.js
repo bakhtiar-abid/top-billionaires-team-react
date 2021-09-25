@@ -54,7 +54,7 @@ const Header = () => {
                </Navbar.Collapse>
             </Container>
          </Navbar>
-         <section className="bg-dark" style={{ height: "400px" }}>
+         <section className="bg-dark" style={{ height: "350px" }}>
             <h1 className="text-white pt-5">
                Let's make a top Billionaires team
             </h1>
@@ -63,6 +63,13 @@ const Header = () => {
                being a great leader entails encouraging people and inspiring
                their creativity.{" "}
             </h5>
+            <h3 className="text-white">
+               {" "}
+               Total Budget: 100 <span className="fw-bolder">
+                  {" "}
+                  Billion{" "}
+               </span>{" "}
+            </h3>
          </section>
       </div>
    );
