@@ -54,7 +54,7 @@ const Header = () => {
                </Navbar.Collapse>
             </Container>
          </Navbar>
-         <section className="bg-dark" style={{ height: "350px" }}>
+         <section className="bg-dark" style={{ height: "400px" }}>
             <h1 className="text-white pt-5">
                Let's make a top Billionaires team
             </h1>

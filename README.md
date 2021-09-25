@@ -4,12 +4,8 @@
 
 #### Live link: https://top-billionaires-react-abid.netlify.app/
 
-## Technologies
+## Short Description
 
----
-
-A list of technologies used within the project:
-
--  [Technology name](https://example.com): Version 12.3
--  [Technology name](https://example.com): Version 2.34
--  [Library name](https://example.com): Version 1234
+-  This website contains some information about top great Billionaires people.
+-  By using this website you can have some important details according to great top leaders profile in the world.
+-  If you are thinking about to build up something that is exceptional, having a combination of solid leadership, communication, and access to good resources make a team with these worlds top leaders by your side.
