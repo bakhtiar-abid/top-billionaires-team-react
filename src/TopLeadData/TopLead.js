@@ -1,4 +1,4 @@
-const topProgrammers = [
+const topLeaders = [
    {
       name: "Jeff Bezos",
       age: 57,
@@ -130,3 +130,6 @@ const topProgrammers = [
       },
    },
 ];
+
+const stringFied = JSON.stringify(topProgrammers);
+console.log(stringFied);
