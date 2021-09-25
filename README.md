@@ -1,7 +1,5 @@
 # Top Billionaires Team
 
-### [Assignment private repo link](https://github.com/ProgrammingHeroWC4/the-superhero-direction-bakhtiarabid)
-
 #### Live link: https://top-billionaires-react-abid.netlify.app/
 
 ## Short Description
