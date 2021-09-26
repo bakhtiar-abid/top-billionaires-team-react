@@ -38,7 +38,7 @@ const Leader = (props) => {
                <Card.Text>
                   {" "}
                   <span className="fw-bolder">Other Assets: </span>
-                  {otherAssets?.asset1}, {otherAssets?.asset2}
+                  {otherAssets?.asset1 + ","} {otherAssets?.asset2}
                </Card.Text>
             </Card.Body>
             <div className="">

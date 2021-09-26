@@ -1,4 +1,7 @@
+import Button from "@restart/ui/esm/Button";
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Cart from "../Cart/Cart";
 import Leader from "../Leader/Leader";
 
@@ -37,7 +40,10 @@ const Leaders = () => {
                </div>
             </div>
             <div className="col-md-3 my-5">
-               <h4>Members Added: {cart.length} </h4>
+               <h4>
+                  {" "}
+                  <FontAwesomeIcon icon={faUser} /> Members Added: {cart.length}{" "}
+               </h4>
                <h4>Total Cost: ${total} </h4>
                {cart.map((info) => (
                   <Cart info={info}></Cart>
