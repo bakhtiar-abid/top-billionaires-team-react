@@ -13,6 +13,7 @@ import "./Header.css";
 const Header = () => {
    return (
       <div>
+         {/* Navbar Section Start */}
          <Navbar bg="dark" expand="lg" variant="dark">
             <Container fluid>
                <Navbar.Brand href="#">Top Billionaires</Navbar.Brand>
@@ -54,6 +55,8 @@ const Header = () => {
                </Navbar.Collapse>
             </Container>
          </Navbar>
+         {/* Navbar section end */}
+         {/* top banner section start */}
          <section className="bg-dark" style={{ height: "400px" }}>
             <h1 className="text-white pt-5">
                Let's make a top Billionaires team
@@ -71,6 +74,7 @@ const Header = () => {
                </span>{" "}
             </h3>
          </section>
+         {/* top banner section end */}
       </div>
    );
 };

@@ -8,3 +8,8 @@
 .img-style img {
    transition: transform 0.5s ease-in-out;
 }
+.fa-facebook,
+.fa-twitter {
+   font-size: 25px;
+   margin: 10px;
+}

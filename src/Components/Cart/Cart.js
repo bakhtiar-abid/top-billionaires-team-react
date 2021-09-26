@@ -1,9 +1,8 @@
-import React from "react";
+import { CloseButton } from "react-bootstrap";
 import "./Cart.css";
-
+/* Showing individual Detail into the cart while clicking on a member */
 const Cart = (props) => {
-   const { img, name, age, residence, role, netWorth, salary, otherAssets } =
-      props.info;
+   const { name, img, role } = props.info;
 
    return (
       <div>
@@ -18,27 +17,14 @@ const Cart = (props) => {
                </div>
                <div className="col-md-8">
                   <div className="card-body">
-                     <h5 className="">Name: {name} </h5>
-                     <p className="card-text">
-                        <span className="fw-bolder">Role: </span> {role}
-                     </p>
-                     <p className="card-text">
-                        <span className="fw-bolder">Age:</span> {age}
-                     </p>
-                     <p className="card-text">
-                        <span className="fw-bolder">Residence:</span>{" "}
-                        {residence}
-                     </p>
-                     <p className="card-text">
-                        <span className="fw-bolder">Net Worth:</span> {netWorth}
-                     </p>
-                     <p className="card-text">
-                        <span className="fw-bolder">Salary: </span> ${salary}
-                     </p>
-                     <p className="card-text">
-                        <span className="fw-bolder">Other Assets: </span>
-                        {otherAssets?.asset1}, {otherAssets?.asset2}
-                     </p>
+                     <h6 className="fw-light">
+                        Name: {name}{" "}
+                        <span>
+                           {" "}
+                           <CloseButton />
+                        </span>{" "}
+                     </h6>
+                     <p className="fw-light"> Role: {role} </p>
                   </div>
                </div>
             </div>

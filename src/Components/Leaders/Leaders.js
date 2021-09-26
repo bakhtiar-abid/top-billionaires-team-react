@@ -10,6 +10,7 @@ import "./Leaders.css";
 const Leaders = () => {
    const [leaders, setLeaders] = useState([]);
 
+   //loading JSON Data
    useEffect(() => {
       fetch("./topLeadData.JSON")
          .then((res) => res.json())
@@ -26,6 +27,7 @@ const Leaders = () => {
    const total = cart.reduce((previous, detail) => previous + detail.salary, 0);
 
    return (
+      /* Passing data as a props */
       <div style={{ backgroundColor: "#eaeded" }}>
          <div className="row">
             <div className="col-md-8 my-5 ms-4">
@@ -40,14 +42,18 @@ const Leaders = () => {
                </div>
             </div>
             <div className="col-md-3 my-5">
+               {/* Total Member Added */}
                <h4>
                   {" "}
                   <FontAwesomeIcon icon={faUser} /> Members Added: {cart.length}{" "}
                </h4>
+               {/* Total Cost */}
                <h4>Total Cost: ${total} </h4>
+               {/* Showing individual info to the cart */}
                {cart.map((info) => (
-                  <Cart info={info}></Cart>
+                  <Cart key={info.id} info={info}></Cart>
                ))}
+               <button className="btn btn-primary">Buy Now</button>
             </div>
          </div>
       </div>

@@ -1,3 +1,4 @@
+// using fake data JavaScript Array Object
 const topLeaders = [
    {
       id: 101,
