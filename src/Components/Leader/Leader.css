@@ -1,1 +1,10 @@
+.img-style {
+   overflow: hidden;
+}
+.img-style img:hover {
+   transform: scale(1.1);
+}
 
+.img-style img {
+   transition: transform 0.5s ease-in-out;
+}
