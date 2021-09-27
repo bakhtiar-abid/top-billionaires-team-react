@@ -20,6 +20,7 @@ const Leaders = () => {
    const [cart, setCart] = useState([]);
 
    const handledToCart = (detail) => {
+      detail.isAdded = true;
       const newCart = [...cart, detail];
       setCart(newCart);
    };

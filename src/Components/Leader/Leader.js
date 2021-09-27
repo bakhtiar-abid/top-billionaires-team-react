@@ -55,12 +55,19 @@ const Leader = (props) => {
                </Card.Text>
             </Card.Body>
             <div className="">
-               <Button
-                  onClick={() => props.handledToCart(props.person)}
-                  className="btn btn btn-info my-3 w-50"
-               >
-                  <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
-               </Button>{" "}
+               {props.person.isAdded ? (
+                  <button className="btn btn btn-info my-3 w-50 ">
+                     <FontAwesomeIcon icon={faShoppingCart} /> Added
+                  </button>
+               ) : (
+                  <Button
+                     onClick={() => props.handledToCart(props.person)}
+                     className="btn btn btn-info my-3 w-50"
+                  >
+                     <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
+                  </Button>
+               )}
+
                <div className="my-3">
                   <a href={socialLink.facebook} target="_blank">
                      <i class="fab fa-facebook"></i>
